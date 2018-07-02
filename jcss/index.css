@@ -1,0 +1,89 @@
+.btn-download, .btn-download:focus, .btn-download:active {
+    background-color: #50D367;
+    border-color: #50D367;
+    color: #FFFFFF;
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+.btn-download:hover {
+    background-color: #47B9D7;
+    border-color: #47B9D7;
+    color: #FFFFFF;
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+.info-card {
+    background-color: #47B9D7;
+    border-color: #47B9D7;
+    color: #FFFFFF;
+}
+
+.title {
+    color: #FFFFFF;
+    font-size: 50px;
+}
+
+.top-background {
+    background-color: #50D367;
+}
+
+.top {
+    position: relative;
+    bottom: -2em;
+}
+
+.middle {
+    position: relative;
+    top: 4em;
+}
+
+.bottom {
+    padding-top: 4em;
+    padding: 2em;
+}
+
+@media (min-width: 48em) {
+    .top {
+        bottom: -3em;
+    }
+
+    .middle {
+        top: 5em;
+    }
+
+    .bottom {
+        padding: 2.5em;
+    }
+}
+
+@media (min-width: 62em) {
+    .top {
+        bottom: -4em;
+    }
+
+    .middle {
+        top: 6em;
+    }
+
+    .bottom {
+        padding: 3em;
+    }
+}
+
+@media (min-width: 75em) {
+    .top {
+        bottom: -5em;
+    }
+
+    .middle {
+        top: 7em;
+    }
+
+    .bottom {
+        padding: 3.5em;
+    }
+}
+
+.bottom {
+    padding-top: 4em;
+}

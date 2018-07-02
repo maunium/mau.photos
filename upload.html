@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Maunium Images</title>
+  <meta property="og:title" content="Images"/>
+  <meta property="og:description" content="Home of mauCapture and the official instance of mauImageServer"/>
+  <meta property="og:url" content="https://img.mau.lu/"/>
+  <meta property="og:image" content="https://img.mau.lu/favicon.ico"/>
+  <meta property="og:site_name" content="Maunium"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maunium.net/beta/css/footer.css">
+  <link rel="stylesheet" href="https://maunium.net/beta/css/text.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/dropzone/4.3.0/dropzone.min.css">
+  <link rel="stylesheet" href="/jcss/upload.css">
+</head>
+<body>
+  <div class="container">
+    <center>
+      <br><br>
+      <h1 class="title">Maunium Images - Upload</h1>
+      <div class="control-container">
+	    <br>
+        <div class="dragndrop" id="dragndrop">Drop Image</div>
+        <input type="file" id="file">
+        <br>
+        <input type="text" id="url" placeholder="Enter image URL">
+        <br><br>
+        <input class="half-width" type="text" id="name" placeholder="Username" onChange="window.localStorage.name = $('#name').val();">
+        <input class="half-width" type="password" id="password" placeholder="Password">
+        <br>
+        <input class="half-width" type="text" id="authtoken" placeholder="Log in to generate token" onChange="window.localStorage.authtoken = $('#authtoken').val();">
+        <button class="half-width login" type="button" id="login" onClick="login()">Log in</button>
+        <br><br>
+        <button class="upload" id="upload" onClick="upload()">Upload Image</button>
+      </div>
+    </center>
+  </div>
+
+  {{.Include "/footer.html"}}
+  <script type="text/javascript" src="/jcss/upload.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Maunium Images - Search</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway:400,700' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css"/>
+  <link rel="stylesheet" href="https://maunium.net/css/footer.css">
+  <link rel="stylesheet" href="https://maunium.net/css/text.css">
+  <link rel="stylesheet" href="/jcss/search.css">
+</head>
+<body>
+  <div class="container">
+    <center>
+      <br><br>
+      <h1 class="title">Maunium Images - Search</h1>
+      <br>
+      <form action="#">
+        <div class="row">
+          <div class="col-md-5 col-sm-4">
+            <input type="text" class="form-control" id="uploader" placeholder="Uploader">
+          </div>
+          <div class="col-sm-5">
+            <input type="text" class="form-control" id="client" placeholder="Client Software">
+          </div>
+          <div class="col-md-2 col-sm-3">
+            <select class="form-control" id="format">
+              <option>Select Format</option>
+              <option>png</option>
+              <option>jpg</option>
+              <option>gif</option>
+              <option>bmp</option>
+            </select>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-sm-5">
+            <input type="text" class="form-control" id="timeRange" placeholder="Uploaded Between">
+          </div>
+          <div class="col-md-5 col-sm-4">
+            <input type="text" class="form-control" id="authToken" placeholder="Auth Token (only required for image management)">
+          </div>
+          <div class="col-md-2 col-sm-3">
+            <button type="submit" class="btn btn-search" onClick="search()">Search</button>
+          </div>
+        </div>
+      </form>
+      <br>
+      <div id="results"></div>
+    </center>
+  </div>
+
+  {{.Include "/footer.html"}}
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/sprintf.js/1/sprintf.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/2/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+  <script type="text/javascript" src="/jcss/search.js"></script>
+</body>
+</html>

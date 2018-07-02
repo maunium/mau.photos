@@ -1,0 +1,33 @@
+.btn-search {
+    width: 100%;
+}
+
+.btn-apply, .btn-search, .btn-management {
+    background-color: #50D367;
+    border-color: #50D367;
+    color: #FFFFFF;
+}
+
+.btn-apply:hover, .btn-search:hover, .btn-management:hover {
+    background-color: #47B9D7;
+    border-color: #47B9D7;
+    color: #FFFFFF;
+}
+
+.btn-cancel {
+    border-color: #47B9D7;
+    background-color: #FFFFFF;
+    color: #212121;
+}
+.btn-cancel:hover {
+    background-color: #47B9D7;
+    color: #FFFFFF;
+}
+
+.card {
+    background-color: #E3E3E3;
+}
+
+.imghidden {
+    background-color: #9A9A9A;
+}

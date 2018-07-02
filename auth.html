@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Maunium Images - Authentication</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway:400,700' type='text/css'>
+  <link rel="stylesheet" href="https://maunium.net/css/footer.css">
+  <link rel="stylesheet" href="https://maunium.net/css/text.css">
+  <link rel="stylesheet" href="/jcss/auth.css">
+</head>
+<body>
+  <div class="container">
+    <center>
+      <br><br>
+      <h1 class="title">Maunium Images - Authentication</h1>
+      <br>
+      <div class="alert alert-danger hidden-xs-up" id="main-alert" role="alert"></div>
+      <form class="form" action="#">
+        <input type="text" class="form-control" id="username" placeholder="Username">
+        <br>
+        <input type="password" class="form-control" id="password" placeholder="Password">
+        <br>
+        <div class="btn-group btn-group-auth" role="group" aria-label="Authentication">
+          <button type="submit" class="btn btn-login" onClick="query('login')">Log In</button>
+          <button type="submit" class="btn btn-signup" onClick="query('register')">Sign Up</button>
+        </div>
+        <br>
+        <br>
+        <input type="text" class="form-control" id="authtoken" placeholder="Your auth token will appear here" readonly>
+      </form>
+      <br>
+    </center>
+  </div>
+
+  {{.Include "/footer.html"}}
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/bootstrap.daterangepicker/latest/daterangepicker.js"></script>
+  <script type="text/javascript" src="/jcss/auth.js"></script>
+</body>
+</html>

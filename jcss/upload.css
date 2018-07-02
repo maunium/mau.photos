@@ -1,0 +1,68 @@
+.control-container {
+	width: 30rem;
+}
+
+.dragndrop {
+	box-sizing: border-box;
+	width: 100%;
+	height: 8rem;
+	margin-bottom: .25rem;
+	padding: 1rem;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	text-align: center;
+	vertical-align: middle;
+
+	color: #92AAB0;
+	border: 2px dotted #0B85A1;
+
+	font-size: 200%;
+}
+
+input {
+	box-sizing: border-box;
+    width: 100%;
+	margin-bottom: .25rem;
+    padding: .375rem 1rem;
+
+    border: 1px solid #9A9A9A;
+    border-radius: .25rem;
+    background-color: #FAFAFA;
+
+    font-size: 1rem;
+}
+
+.half-width {
+	width: calc(50% - .15rem);
+}
+
+button {
+	box-sizing: border-box;
+	width: 100%;
+	margin-bottom: .25rem;
+    padding: .375rem 1rem;
+
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+
+	color: #FFFFFF;
+    border: 1px solid #50D367;
+    border-radius: .25rem;
+    background-color: #50D367;
+
+    font-size: 1rem;
+    font-weight: bold;
+}
+button:hover {
+    border: 1px solid #47B9D7;
+	background-color: #47B9D7;
+}

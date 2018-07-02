@@ -1,0 +1,44 @@
+@media (min-width: 34em) {
+    .form {
+        padding-left: 6.8em;
+        padding-right: 6.8em;
+    }
+}
+
+@media (min-width: 48em) {
+    .form {
+        padding-left: 9.6em;
+        padding-right: 9.6em;
+    }
+}
+
+@media (min-width: 62em) {
+    .form {
+        padding-left: 12.4em;
+        padding-right: 12.4em;
+    }
+}
+
+@media (min-width: 75em) {
+    .form {
+        padding-left: 15em;
+        padding-right: 15em;
+    }
+}
+
+.btn-group-auth {
+    width: 100%;
+}
+
+.btn-login, .btn-login:focus, .btn-login:active, .btn-signup, .btn-signup:focus, .btn-signup:active {
+    background-color: #50D367;
+    border-color: #50D367;
+    color: #FFFFFF;
+    width: 50%;
+}
+
+.btn-login:hover, .btn-signup:hover {
+    background-color: #47B9D7;
+    border-color: #47B9D7;
+    color: #FFFFFF;
+}
